@@ -90,9 +90,167 @@
         <div id="reported"></div>
       </div>
     </main>
-    <section></section>
+    <section id="question-section" class="container" style="display: block">
+      <div
+        class="row g-4 d-flex mx-auto align-items-center justify-content-center m-5 p-5"
+        style="border: 3px solid rgba(84, 85, 87, 0.431); border-radius: 10px"
+      >
+        <h1 class="text-center text-bold fw-bold mb-5">Inquery Section</h1>
+        <div class="col-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed mb-2 p-4 fw-bolder"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                  style="
+                    border: 4px solid black;
+                    border-radius: 5px;
+                    background-color: #ffc107;
+                  "
+                >
+                  How does JavaScript work?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>
+                    JavaScript is a High Level Interpreted Language.</strong
+                  >
+                  JavaScript executes only one command at a time and follows a
+                  specific order. That means,it goes to the next line only when
+                  the current line has been finished executing. That is why
+                  JavaScript is also called
+                  <strong>Synchronous Single-Threaded Language.</strong>
+                  When we run a javascript program,an Execution Context is
+                  created which consists of two components,<strong
+                    >Memory Component</strong
+                  >
+                  and <strong>Code Component.</strong> First,it allocates or
+                  creates memory in the memory component for all the variables
+                  and functions that have been declared in the Javascript.then
+                  it starts setting the values of the variable and executes the
+                  JavaScript code.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed mb-2 p-4 fw-bolder"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                  style="
+                    border: 4px solid black;
+                    border-radius: 5px;
+                    background-color: #ffc107;
+                  "
+                >
+                  What does JavaScript Event Loop do?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>JavaScript is a single threaded language.</strong>
+                  All the execution processes follow the last in first out
+                  mechanism through the call stack. In case of executing a time
+                  costly process or operation JavaScript offers
+                  <strong>Asynchronous Function.</strong> The Asynchronous
+                  Function avoids the blocking behavior of an application while
+                  executing a large process. Because of the asynchronous
+                  function, JavaScript single thread doesn't get blocked. The
+                  thread sends the asynchronous functions to the
+                  <strong>Web API</strong> or <strong>C++ API</strong> to handle
+                  the large operation, which may take much time while executing.
+                  After finishing the functions asynchronously, the functions
+                  are sent to the <strong>Call Back Queue</strong>. To send the
+                  functions from the Call Back queue to the
+                  <strong>Call Stack,</strong> a system is needed which follows
+                  the <strong>First In First Out</strong> Mechanism.
+                  <strong>Event loop</strong> is the system that sends the
+                  functions stored in the Call Back Queue to the Call Stack.
+                  After sending to the Call Stack the process will be completed.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed p-4 fw-bolder"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                  style="
+                    border: 4px solid black;
+                    border-radius: 5px;
+                    background-color: #ffc107;
+                  "
+                >
+                  What's the difference between Local Storage and Session
+                  Storage?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>Local Storage</strong> and
+                  <strong>Session Storage </strong> are the storage of a browser
+                  to store the data of clients.
+                  <strong>Local Storage</strong> stores the data without any
+                  expiration date or conditions.The data expires only if it is
+                  deleted manually. Local Storage stores the data for the whole
+                  browser. <br />
+                  While in <strong>Session Storage</strong>, the data is stored
+                  in the storage till the browser is opened. Once the browser is
+                  closed,the data from the session storage expires. Session
+                  Storage stores data for a particular tab or window. If
+                  multiple tabs or windows are opened with the same
+                  URL,different session storages will be created for each tab or
+                  window.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          class="col-6 img-fluid"
+          style="height: 400px; width: 450px"
+          src="images/java-script.png"
+          alt=""
+        />
+      </div>
+    </section>
     <footer></footer>
 
+    <!-- Bootstrap JS Link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <!-- add javascript  file  -->
     <script src="./js/app.js"></script>
   </body>
