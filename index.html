@@ -90,12 +90,21 @@
         <div id="reported"></div>
       </div>
     </main>
-    <section id="question-section" class="container" style="display: block">
+    <section
+      id="question-section"
+      class="container my-5 p-3"
+      style="
+        border-top: 13px solid #4d4d4d;
+        border-radius: 10px;
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      "
+    >
+      <h1 class="text-center text-bold fw-bold my-4">Q&A Section</h1>
       <div
-        class="row g-4 d-flex mx-auto align-items-center justify-content-center m-5 p-5"
-        style="border: 3px solid rgba(84, 85, 87, 0.431); border-radius: 10px"
+        class="row g-4 d-flex mx-auto align-items-center justify-content-around m-5"
       >
-        <h1 class="text-center text-bold fw-bold mb-5">Question Section</h1>
         <div class="col-6">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -108,9 +117,9 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                   style="
-                    border: 4px solid black;
+                    border: 3px solid black;
                     border-radius: 5px;
-                    background-color: #ffc107;
+                    background-color: hsla(45, 100%, 51%, 0.7);
                   "
                 >
                   How does JavaScript work?
@@ -122,22 +131,21 @@
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body" style="text-align: justify">
                   <strong>
                     JavaScript is a High Level Interpreted Language.</strong
                   >
                   JavaScript executes only one command at a time and follows a
-                  specific order. That means,it goes to the next line only when
+                  specific order. That means, it goes to the next line only when
                   the current line has been finished executing. That is why
                   JavaScript is also called
                   <strong>Synchronous Single-Threaded Language.</strong>
-                  When we run a javascript program,an Execution Context is
-                  created which consists of two components,<strong
-                    >Memory Component</strong
-                  >
-                  and <strong>Code Component.</strong> First,it allocates or
+                  When we run a javascript program, an Execution Context is
+                  created which consists of two components,
+                  <strong> Memory Component</strong> and
+                  <strong>Code Component.</strong> First, it allocates or
                   creates memory in the memory component for all the variables
-                  and functions that have been declared in the Javascript.then
+                  and functions that have been declared in the Javascript. Then
                   it starts setting the values of the variable and executes the
                   JavaScript code.
                 </div>
@@ -153,9 +161,9 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                   style="
-                    border: 4px solid black;
+                    border: 3px solid black;
                     border-radius: 5px;
-                    background-color: #ffc107;
+                    background-color: hsla(45, 100%, 51%, 0.7);
                   "
                 >
                   What does JavaScript Event Loop do?
@@ -167,7 +175,7 @@
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body" style="text-align: justify">
                   <strong>JavaScript is a single threaded language.</strong>
                   All the execution processes follow the last in first out
                   mechanism through the call stack. In case of executing a time
@@ -185,8 +193,9 @@
                   <strong>Call Stack,</strong> a system is needed which follows
                   the <strong>First In First Out</strong> Mechanism.
                   <strong>Event loop</strong> is the system that sends the
-                  functions stored in the Call Back Queue to the Call Stack.
-                  After sending to the Call Stack the process will be completed.
+                  functions stored in the <strong>Call Back Queue</strong> to
+                  the <strong>Call Stack.</strong> After sending to the
+                  <strong>Call Stack,</strong> the process will be completed.
                 </div>
               </div>
             </div>
@@ -200,9 +209,9 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                   style="
-                    border: 4px solid black;
+                    border: 3px solid black;
                     border-radius: 5px;
-                    background-color: #ffc107;
+                    background-color: hsla(45, 100%, 51%, 0.7);
                   "
                 >
                   What's the difference between Local Storage and Session
@@ -215,20 +224,22 @@
                 aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body" style="text-align: justify">
                   <strong>Local Storage</strong> and
-                  <strong>Session Storage </strong> are the storage of a browser
-                  to store the data of clients.
+                  <strong>Session Storage </strong> are the storages of a
+                  browser which stores the data of the clients. <br />
                   <strong>Local Storage</strong> stores the data without any
-                  expiration date or conditions.The data expires only if it is
-                  deleted manually. Local Storage stores the data for the whole
-                  browser. <br />
+                  expiration date or conditions. The data expires only when it
+                  is deleted manually. Local Storage stores the data for
+                  <strong>the whole browser.</strong> <br />
                   While in <strong>Session Storage</strong>, the data is stored
                   in the storage till the browser is opened. Once the browser is
-                  closed,the data from the session storage expires. Session
-                  Storage stores data for a particular tab or window. If
-                  multiple tabs or windows are opened with the same
-                  URL,different session storages will be created for each tab or
+                  closed, the data from the session storage expires. Session
+                  Storage stores the data for
+                  <strong>a particular tab or window.</strong> If multiple tabs
+                  or windows are opened with the same
+                  <strong> URL,</strong>
+                  different session storages will be created for each tab or
                   window.
                 </div>
               </div>
@@ -237,7 +248,7 @@
         </div>
         <img
           class="col-6 img-fluid"
-          style="height: 400px; width: 450px"
+          style="height: 350px; width: 420px; opacity: 0.7"
           src="images/java-script.png"
           alt=""
         />
